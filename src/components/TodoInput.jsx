@@ -28,7 +28,7 @@ function TodoInput({ addTodo }) {
             {showInput && 
             <div className="flex flex-col w-full gap-2 bg-white p-5 rounded-lg">
                 <input className="border rounded-md p-2 placeholder:font-bold focus:outline font-bold text-lg" 
-                type="text" placeholder="Add title" value={judul} onChange={(e) => {setJudul(e.target.value)}}/>
+                type="text" placeholder="Add title" value={judul} onChange={(e) => setJudul(e.target.value)}/>
                 <textarea className="border rounded-md p-2 focus:outline resize-none text-sm"
                 placeholder="Add todo here"  value={deskripsi} onChange={(e) => setDeskripsi(e.target.value)}></textarea>
                 <button className="bg-neutral-900 text-white p-1 rounded-md"

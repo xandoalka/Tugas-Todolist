@@ -9,7 +9,7 @@ const TodoList = ({ todos, removeTodo }) => {
                     {todos.map((todo, index) => (
                         <li className='bg-white py-2 px-4 rounded-lg break-words sm:w-[49%]' key={index}>
                             <h3 className='text-2xl font-semibold text-blue-800 mb-4 capitalize'>{todo.judul}</h3>
-                            <p className=''>{todo.deskripsi}</p>
+                            <p>{todo.deskripsi}</p>
                             <button className='float-right border-2 rounded-lg text-white p-1'
                              onClick={() => removeTodo(index)}>❌</button>
                         </li>
